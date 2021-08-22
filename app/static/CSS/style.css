@@ -1,0 +1,79 @@
+content {
+    flex: 1 0 auto;
+}
+
+p {
+  color: #020202;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+.content {
+        background-color: #020202;
+        color: #161515;
+        margin-top: 5rem;
+      }
+      
+      h2, h3, h4, h5, h6 {
+        color: #0909c4;
+        font-weight:900;
+        text-align: center;
+      }
+      
+      .bg-steel {
+        background-color: #070707;
+      }
+      
+      .site-header .navbar-nav .nav-link {
+        color: #cbd5db;
+      }
+      
+      .site-header .navbar-nav .nav-link:hover {
+        color: #ffffff;
+      }
+      
+      .site-header .navbar-nav .nav-link.active {
+        font-weight: 500;
+      }
+      
+      .content-section {
+        background: #161616;
+        padding: 10px 20px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        margin-bottom: 20px;
+      }
+body{
+  color: rgb(8, 8, 8);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  font-family: 'Prompt', sans-serif; 
+}
+.userblog {
+  background-color: rgb(204, 191, 191);
+  opacity: 0.7;
+}
+.sblog{
+  background-color: rgba(255, 255, 255, 0.924);  
+  color: rgb(161, 194, 199);
+}
+#submit{
+  background-color: green;
+  border-radius: 5px;
+}
+h1 {
+  color: #f8f7f7;
+  font-weight: 800;
+}
+
+.cards{
+  color: #f0f4f7;
+}
+.sectionc {
+  color: #cbd5db;
+}

@@ -92,7 +92,7 @@ def subscribe():
     email = request.form.get('follower')
     new_follower = Follower(email = email)
     new_follower.save_follower()
-    mail_message("Subscribed to My-Blog","email/follower",new_follower.email,new_follower=new_follower)
+    mail_message("Subscribed to Blog-1","email/follower",new_follower.email,new_follower=new_follower)
     flash('Sucessfuly subscribed!')
     return redirect(url_for('main.index'))
    

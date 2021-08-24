@@ -1,4 +1,5 @@
 import urllib.request,json
+
 import requests
 from .models import Quote 
 

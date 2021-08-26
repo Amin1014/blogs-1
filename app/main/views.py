@@ -8,6 +8,7 @@ from ..import db
 from app.requests import get_quotes
 
 @main.route('/')
+@login_required
 def index():
     quotes = get_quotes()
     blogs = Blog.query.all()
@@ -42,6 +43,7 @@ def new_blog():
 
 
 @main.route('/blog/<id>')
+@login_required
 def blog(id):
     comments = Comment.query.filter_by(blog_id=id).all()
     blog = Blog.query.get(id)
@@ -80,6 +82,7 @@ def delete_post(blog_id):
 
 
 @main.route('/user/<string:username>')
+@login_required
 def user_posts(username):
     user = User.query.filter_by(username=username).first()
     blogs = Blog.query.filter_by(user=user)
@@ -88,6 +91,7 @@ def user_posts(username):
 
 
 @main.route('/subscribe',methods = ['POST','GET'])
+@login_required
 def subscribe():
     email = request.form.get('follower')
     new_follower = Follower(email = email)
